@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Input Data Pelanggan</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+              rel="stylesheet">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body,
+            input,
+            button {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            input,
+            button {
+                font-size: 16px;
+            }
+
+            .head_bar {
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #5F30E2;
+                color: white;
+            }
+
+            main {
+                max-width: 800px;
+                width: 80%;
+                margin: 0 auto;
+                padding: 16px;
+
+            }
+
+            .input_section {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+
+            .input_section>h2 {
+                text-align: center;
+                color: #5F30E2;
+            }
+
+            .input_section>form>.input {
+                margin: 8px 0;
+            }
+
+            .input_section>form>button {
+                background-color: #5F30E2;
+                color: white;
+                border: 0;
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+            .input_section>form>button>span {
+                font-weight: bold;
+            }
+
+            .input_section>form>.input>input {
+                display: block;
+                width: 100%;
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #bba4fc;
+                ;
+            }
+
+            .input_section>form>.input>label {
+                color: #5F30E2;
+                font-weight: bold;
+            }
+
+            .input_section>form>.input_inline {
+                margin: 12px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .input_section>form>.input_inline>label {
+                color: #5F30E2;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="head_bar">
+            <h1 class="head_bar__title">Aplikasi Minimarket</h1>
+        </header>
+    <main>
+        <section class="input_section">
+            <h2>Masukkan Data Baru</h2>
+            <form id="inputBook" action='pelanggan' method='get'>
+                <div class="input">
+                    <label for="1">Kode Pelanggan</label>
+                    <input name='idplg' id="1" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="2">Nama Pelanggan</label>
+                    <input name='namaplg' id="2" type="text" required>
+                </div>
+                <button id="bookSubmit" type="submit">Masukkan Data</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
